@@ -12,13 +12,13 @@
         
         <label for="reference" class="text-gray-700 mb-2 mr-2 font-semibold">Reference Number:</label>
         <input type="text" id="reference" name="reference" required class="p-2 border border-gray-400 rounded "> <br>
-        <form>
+        <form action="connect.php" method="$_POST">
             <div class="m-4 ">
-            <input type="radio" id="fulltime" name="jobselection" checked  >
+            <input type="radio" id="fulltime" name="jobSelection" value="fulltime" checked  >
             <label for="fulltime"  class="font-semibold text-gray-700 mr-14 ">Full-Time</label> 
-            <input type="radio" id="parttime" name="jobselection"  >
+            <input type="radio" id="parttime" name="jobSelection" value="parttime" >
             <label for="parttime" class="font-semibold text-gray-700 mr-14">Part-Time</label> 
-            <input type="radio" id="intern" name="jobselection" >
+            <input type="radio" id="intern" name="jobSelection" value="intern" >
             <label for="intern" class="font-semibold text-gray-700 mr-14">Internship</label> <br>
             </div>
             <div class="mb-4">
@@ -43,7 +43,7 @@
             
             <div class="mb-4">
                 <label for="location" class="block text-gray-700 font-semibold mb-2">Location:</label>
-                <input type="text" id="location" name="location" required class="w-full p-2 border border-gray-400 rounded">
+                <input type="list" id="location" name="location" required class="w-full p-2 border border-gray-400 rounded">
             </div>
             <div>
                 <label for="cv" class=" font-semibold text-gray-700 mr-4 ">Upload your CV</label>
